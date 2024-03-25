@@ -8,22 +8,37 @@
   </head>
   <body>
     <div id="weather-app">
-      <h1 id="current-city">London</h1>
-      <p>
-        <span id="current-day"> Sunday 13:16 </span>, <br />
-        broken clouds Humidity: 68%, Wind: 8.75km
-      </p>
-      <div id="temp-emoji">☀️</div>
-      <div id="temp">11°C</div>
-      <footer>
-        <p>
-          This project was coded by
-          <a href="#" target="_blank">Your name</a> and is
-          <a href="#" target="_blank"> on GitHub</a> and
-          <a href="#" target="_blank">hosted on Netlify</a>
-        </p>
-      </footer>
+      <form>
+        <input type="search" placeholder="Enter a city.." id="search-city" />
+        <input type="submit" value="🔍" id="search-button" />
+        <input type="submit" value="📍" id="my-location" />
+      </form>
+      <div id="container">
+        <div id="temp-emoji">☀️</div>
+        <div id="left-side">
+          <div id="current-city">London</div>
+          <div id="current-day">Sunday 13:16,</div>
+          <div id="current-weather">Broken clouds</div>
+        </div>
+        <div id="temp">11</div>
+        <div id="right-side">
+          <div id="unit">°C</div>
+          <div id="weather-details">
+            Humidity: 68% <br />
+            Wind: 8.75km
+          </div>
+        </div>
+      </div>
     </div>
+
+    <footer id="footer">
+      <p>
+        This project was coded by
+        <a href="#" target="_blank">Diletta Zecchinetti</a> and is
+        <a href="#" target="_blank"> on GitHub</a> and
+        <a href="#" target="_blank">hosted on Netlify</a>
+      </p>
+    </footer>
   </body>
   <script src="src/index.js"></script>
 </html>

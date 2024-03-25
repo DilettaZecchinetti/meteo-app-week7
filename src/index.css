@@ -2,11 +2,58 @@ body {
   background: salmon;
   font-family: "Roboto", sans-serif;
 }
+
 #weather-app {
   background: white;
   max-width: 600px;
   margin: 60px auto;
   padding: 30px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+
+#search-city {
+  background-color: #f9f7fe;
+  border: none;
+  width: 85%;
+  font-size: 16px;
+  border-radius: 30px;
+  padding: 20px;
+  color: rgba(39, 33, 66, 0.4);
+}
+
+#search-button {
+  font-size: 16px;
+  border: none;
+  padding: none;
+  background-color: white;
+}
+
+#my-location {
+  font-size: 16px;
+  border: none;
+  padding: none;
+  background-color: white;
+}
+
+#container {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer {
+  text-align: center;
+}
+
+#temp {
+  font-size: 50px;
+}
+
+#unit {
+  font-size: 30px;
+}
+
+#temp-emoji {
+  font-size: 50px;
 }
