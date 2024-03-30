@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
+
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Weather App</title>
   </head>
   <body>
-    <div id="weather-app">
+    <div class="weather-app">
       <form class="search-form" id="search-form">
         <input
           type="search"
           placeholder="Enter a city.."
           id="search-city-input"
         />
-        <input type="submit" value="🔍" id="search-button" />
-        <input type="submit" value="📍" id="my-location" />
       </form>
+      <br />
       <div id="container">
         <div id="icon"></div>
         <div id="left-side">
@@ -38,8 +38,10 @@
     <footer id="footer">
       <p>
         This project was coded by
-        <a href="#" target="_blank">Diletta Zecchinetti</a> and is
-        <a href="#" target="_blank"> on GitHub</a> and
+        <a href="https://github.com/DilettaZecchinetti" target="_blank"
+          >Diletta Zecchinetti</a
+        >
+        and is <a href="#" target="_blank"> on GitHub</a> and
         <a href="#" target="_blank">hosted on Netlify</a>
       </p>
     </footer>
