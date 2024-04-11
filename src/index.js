@@ -10,7 +10,7 @@ function updateWeatherInfo(response) {
   let iconElement = document.querySelector("#icon");
 
   iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
-  timeElement.innerHTML = `${formatDate(date)},`;
+  timeElement.innerHTML = `${formatDate(date)}`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -32,7 +32,7 @@ function formatDate(date) {
   ];
   let day = days[date.getDay()];
 
-  return `${day} ${hours}:${minutes}`;
+  return `Last update: ${day} ${hours}:${minutes}`;
 
   if (minutes < 10) {
     minutes = `0${minutes}`;

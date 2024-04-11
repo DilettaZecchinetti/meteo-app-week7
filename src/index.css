@@ -1,17 +1,22 @@
 body {
-  background: white;
   font-family: "Montserrat", sans-serif;
-  color: white;
+  color: black;
+  background-color: #f8f6fd;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 10px;
 }
 
 .weather-app {
   border-radius: 30px;
-  background: linear-gradient(
-    246deg,
-    rgb(250, 198, 225) 0%,
-    rgb(139, 102, 241) 100%
-  );
-  width: 600px;
+  background: white;
+  width: 800px;
   border: white;
   border: 1px solid #fff;
   margin: 60px auto;
@@ -20,18 +25,12 @@ body {
 
 .search-form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#container {
-  display: flex;
-  justify-content: space-around;
-  line-height: 2;
+  justify-content: left;
 }
 
 #search-city-input {
   margin-top: 20px;
+  margin-left: 30px;
   background-color: #f9f7fe;
   border: none;
   font-size: 16px;
@@ -39,34 +38,53 @@ body {
   padding: 20px;
   color: rgba(39, 33, 66, 0.4);
   width: 500px;
+  border-radius: 10px;
 }
 
-#current-city {
-  font-size: 30px;
+#search-button {
+  border-radius: 10px;
+  background-color: lightsalmon;
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
-#temperature {
-  font-size: 90px;
-  font-weight: bolder;
-  margin-top: -20px;
-}
-
-#unit {
-  font-size: 30px;
+#location-button {
+  border-radius: 10px;
+  background-color: lightsalmon;
+  border: none;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
 }
 
 #icon {
-  padding-top: 20px;
-  width: 60px;
-  line-height: 40px;
-  padding-left: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+hr {
+  width: 600px;
+}
+
+.weather-forecast-date {
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#weather-forecast-temperatures {
+  text-align: center;
 }
 
 #footer {
   text-align: center;
   color: grey;
-}
-
-#current-city {
-  font-weight: bolder;
+  font-size: 12px;
 }

@@ -10,28 +10,62 @@
   </head>
   <body>
     <div class="weather-app">
+      <div id="time"></div>
       <form class="search-form" id="search-form">
         <input
           type="search"
           placeholder="Enter a city.."
           id="search-city-input"
         />
+        <button
+          class="btn btn-outline-secondary"
+          id="search-button"
+          type="submit"
+        >
+          🔎
+        </button>
+        <button
+          class="btn btn-outline-secondary"
+          id="location-button"
+          type="submit"
+        >
+          📍
+        </button>
       </form>
       <br />
-      <div id="container">
-        <div id="icon"></div>
-        <div id="left-side">
+      <div class="row" id="container">
+        <div class="column" id="icon"></div>
+        <div class="column" id="left-side">
           <div id="current-city"></div>
-          <div id="time"></div>
+
           <div id="description"></div>
         </div>
-        <div id="temperature"></div>
-        <div id="right-side">
+        <div class="column" id="temperature"></div>
+        <div class="column" id="right-side">
           <div id="unit">°C</div>
           Humidity:
           <span id="humidity"></span><br />
           Wind:
           <span id="wind"></span>
+        </div>
+      </div>
+      <hr />
+      <div class="weather-forecast">
+        <div class="row">
+          <div class="col-2">
+            <div class="weather-forecast-date">Thu</div>
+            <div class="weather-icon">
+              <img
+                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png"
+                alt=""
+                width="36"
+              />
+              <div class="column" id="weather-forecast-temperatures">
+                <span class="max-temp">18° </span
+                ><span class="min-temp">12°</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
