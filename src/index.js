@@ -37,7 +37,7 @@ function formatDate(date) {
   return `Last update: ${day} ${hours}:${minutes}`;
 
   if (minutes < 10) {
-    minutes = `0${minutes}`;
+    minutes = `$0{minutes}`;
   }
 }
 

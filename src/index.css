@@ -2,6 +2,73 @@ body {
   font-family: "Montserrat", sans-serif;
   color: black;
   background-color: #f8f6fd;
+  position: relative;
+}
+
+#time {
+  padding-top: 20px;
+  padding-right: 40px;
+  text-align: end;
+  font-size: 12px;
+}
+
+#current-city {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+#description {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#temperature {
+  font-size: 60px;
+  text-align: center;
+  font-weight: bolder;
+  padding-top: 40px;
+  color: #ff6464;
+}
+
+#right-side {
+  line-height: 1.5;
+}
+
+#left-side {
+  padding-top: 30px;
+}
+
+#umidita {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 15px;
+}
+
+#humidity {
+  opacity: 85%;
+  font-size: 15px;
+}
+
+#vento {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 15px;
+}
+
+#wind {
+  opacity: 85%;
+  font-size: 15px;
+}
+
+#unit {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+#forecast {
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .row {
@@ -21,58 +88,67 @@ body {
   border: 1px solid #fff;
   margin: 60px auto;
   margin-bottom: 20px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
 
 .search-form {
   display: flex;
-  justify-content: left;
+  justify-content: center;
 }
 
 #search-city-input {
   margin-top: 20px;
-  margin-left: 30px;
+
   background-color: #f9f7fe;
   border: none;
   font-size: 16px;
   border-radius: 30px;
   padding: 20px;
   color: rgba(39, 33, 66, 0.4);
-  width: 500px;
+  width: 650px;
   border-radius: 10px;
 }
 
 #search-button {
   border-radius: 10px;
-  background-color: lightsalmon;
+  background-color: #ff6464;
+  opacity: 80%;
   border: none;
   padding: 20px;
   margin-top: 20px;
   margin-left: 10px;
+  cursor: pointer;
 }
 
-#location-button {
-  border-radius: 10px;
-  background-color: lightsalmon;
-  border: none;
-  padding: 20px;
-  margin-top: 20px;
-  margin-left: 10px;
+#search-button:hover {
+  transition: all 200ms ease-in-out;
+  opacity: 60%;
+}
+
+.weather-forecast-date {
+  color: rgba(39, 33, 66, 0.4);
+}
+
+.max-temp {
+  color: #ff6464;
+}
+
+.min-temp {
+  color: pink;
 }
 
 #icon {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-hr {
-  width: 600px;
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
 }
 
 .weather-forecast {
   display: flex;
   justify-content: space-around;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .weather-icon {
