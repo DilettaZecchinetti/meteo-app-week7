@@ -69,8 +69,10 @@ hr {
   width: 600px;
 }
 
-.weather-forecast-date {
-  text-align: center;
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 
 img {
